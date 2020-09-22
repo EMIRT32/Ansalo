@@ -132,11 +132,9 @@ const temaEnStorage = ()=>{
         
         container.classList.add('dark');
     } else if (temaGuardado == 'light'){
-        container.className = 'container';
+        container.className = 'container ';
         //container.classList.remove('dark');
-    } else if (temaGuardado == 'pink'){
-        container.classList.add('pink');
-    }
+    } 
     console.log(temaGuardado);
 }
 temaEnStorage();

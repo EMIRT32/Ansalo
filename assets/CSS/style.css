@@ -36,5 +36,18 @@ body {
 }
 .container.dark .header,
 .container.dark .footer {
-	box-shadow: 0 0 8px gray;
+	box-shadow: 0 0 8px rgb(242, 239, 239);
+}
+
+
+.container.light p,
+.container.light h1,
+.container.light h3,
+.container.light label,
+.container.light a {
+	color: #1a1111;
+}
+.container.light .header,
+.container.light .footer {
+	box-shadow: 0 0 8px rgb(230, 53, 53);
 }
