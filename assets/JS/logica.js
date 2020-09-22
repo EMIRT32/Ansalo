@@ -107,3 +107,36 @@ teclaPrueba.addEventListener('click', ()=>{
         console.log(typeof(teclaPrueba));
     }
 })*/
+
+//temas
+const dark = document.getElementById('dark');
+const light = document.getElementById('light');
+
+
+dark.addEventListener('click', tema=>{
+    container.className = "container dark"
+   // document.getElementById('container').classList.add('dark');
+    localStorage.setItem('tema', 'dark');
+});
+light.addEventListener('click', tema=>{
+    container.className = "container light"
+   // document.getElementById('container').classList.remove('dark');
+    localStorage.setItem('tema', 'light');
+});
+
+
+
+const temaEnStorage = ()=>{
+    const temaGuardado = localStorage.getItem('tema') ;
+    if (temaGuardado == 'dark'){
+        
+        container.classList.add('dark');
+    } else if (temaGuardado == 'light'){
+        container.className = 'container';
+        //container.classList.remove('dark');
+    } else if (temaGuardado == 'pink'){
+        container.classList.add('pink');
+    }
+    console.log(temaGuardado);
+}
+temaEnStorage();
